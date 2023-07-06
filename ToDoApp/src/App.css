@@ -1,0 +1,73 @@
+body {
+
+  background-color: #ffffff;
+  /* Replace with your desired background color */
+}
+
+.Navbar {
+
+  background: '#fff';
+  position: fixed;
+  top: 0;
+  margin-left: 15px;
+  margin-top: 20px;
+  text-align: center;
+
+}
+
+.maintext {
+  width:100%;
+  top:0;
+  left: 178px;;
+  position: fixed;
+  color:black
+}
+.AddButton {
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-top:15px;
+
+}
+
+.Divider {
+  width: 1px;
+ top:0;
+  left: 80px;
+  position: fixed;
+  height: 100vh;
+  background: #8f8f8f;
+}
+
+/* .MainScreen {
+  top: 0;
+  left: 155px;
+  position:relative;
+} */
+.MainScreen {
+  top: 0px; /* Adjust the top position based on the height of the maintext */
+  left: 155px;
+  position:absolute;
+  height: calc(100vh - 0px); /* Adjust the height based on the available viewport height and the top position */
+  overflow-y: auto; /* Enable vertical scrolling */
+ 
+}
+
+
+.Showtasks {
+  display: flex;
+  flex-direction: row;
+  max-width: 85vw;
+  flex-wrap: wrap;
+  margin-top: 120px; 
+  max-height: calc(100vh - 120px); /* Adjust max-height based on available viewport height and margin-top */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+.Showtasks::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
